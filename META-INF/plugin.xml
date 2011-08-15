@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+  <name>CRXPlugin</name>
+  <description>short description of the plugin</description>
+  <version>1.0</version>
+  <vendor>Meredith</vendor>
+  <idea-version since-build="8000"/>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+      <component>
+          <implementation-class>com.meredith.devtools.intellij.crx.CrxIdeaProject</implementation-class>
+      </component>
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+      <toolWindow
+          id="CRX Repository Tree"
+          anchor="left"
+          secondary="true"
+          factoryClass="com.meredith.devtools.intellij.crx.toolwindow.CRXTreeToolWindowFactory">
+      </toolWindow>
+      <toolWindow
+          id="CRX Property View"
+          anchor="bottom"
+          secondary="true"
+          factoryClass="com.meredith.devtools.intellij.crx.toolwindow.CrxPropertyToolWindowFactory">
+      </toolWindow>
+  </extensions>
+</idea-plugin>
