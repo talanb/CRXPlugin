@@ -39,12 +39,13 @@ public class CrxPropertyView extends SimpleToolWindowPanel implements DataProvid
         TableColumn col1 = table.getColumnModel().getColumn(0);
         col1.setPreferredWidth(200);
         col1.setHeaderValue("Property Name");
-//        col1.setCellRenderer(new NodeCellRenderer());
+        col1.setCellRenderer(new NodeCellRenderer());
         TableColumn col2 = table.getColumnModel().getColumn(1);
         col2.setPreferredWidth(500);
         col2.setHeaderValue("Property Value");
+        col2.setCellRenderer(new NodeCellRenderer());
         TableColumn col3 = table.getColumnModel().getColumn(2);
-
+        col3.setCellRenderer(new NodeCellRenderer());
         col3.setHeaderValue("Data Type");
 
     }

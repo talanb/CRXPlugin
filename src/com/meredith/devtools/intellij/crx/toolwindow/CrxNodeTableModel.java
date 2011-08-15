@@ -15,7 +15,6 @@ import java.util.List;
 public class CrxNodeTableModel extends AbstractTableModel {
     private CrxNode crxNode;
     private List<Property> properties;
-    private static DateFormat dateFormat = SimpleDateFormat.getDateTimeInstance();
 
     public CrxNodeTableModel(CrxNode crxNode) {
         this.crxNode = crxNode;
@@ -42,64 +41,7 @@ public class CrxNodeTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Object value = null;
-        try {
-            Property property = properties.get(rowIndex);
-            switch (columnIndex) {
-                case 0:
-                    value = property.getName();
-                    break;
-                case 1:
-                    switch(property.getType()) {
-                        case 1:
-                            if (property.isMultiple()) {
-                                value = getMultipleStrings(property);
-                            } else {
-                                value = property.getString();
-                            }
-                            break;
-                        case 5:
-
-                            Calendar date = property.getDate();
-                            value = dateFormat.format(date.getTime());
-                            break;
-                        case 7:
-                            if (property.isMultiple()) {
-                                value = getMultipleStrings(property);
-                            } else {
-                                value = property.getString();
-                            }
-                            break;
-                        default:
-                            value = property.getValue().getString();
-                    }
-                    break;
-                case 2:
-                    boolean isMult = property.isMultiple();
-                    switch (property.getType()) {
-                        case 1:
-                            value = "String";
-                            break;
-                        case 5:
-                            value = "Date";
-                            break;
-                        case 7:
-                            value = "Name";
-                            break;
-                        default:
-                            value = String.valueOf(property.getType());
-                    }
-                    if (isMult) {
-                        value = value + "[]";
-                    }
-                    break;
-                default:
-                    value = "<undefined>";
-            }
-        } catch (RepositoryException e) {
-            e.printStackTrace();
-        }
-        return value;
+        return properties.get(rowIndex);
     }
 
     @Override
@@ -154,15 +96,4 @@ public class CrxNodeTableModel extends AbstractTableModel {
         }
     }
 
-    private String getMultipleStrings(Property property) throws RepositoryException {
-        StringBuilder builder = new StringBuilder();
-        Value[] values = property.getValues();
-        for (Value value : values) {
-            builder.append(value.getString());
-            builder.append(",");
-        }
-        String stringValues = builder.toString();
-        return stringValues.substring(0, stringValues.length()-1);
-
-    }
 }
