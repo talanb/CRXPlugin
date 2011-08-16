@@ -2,6 +2,10 @@ package com.meredith.devtools.intellij.crx.toolwindow;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.actionSystem.DataProvider;
+import com.intellij.openapi.editor.Document;
+import com.intellij.openapi.editor.Editor;
+import com.intellij.openapi.editor.EditorFactory;
+import com.intellij.openapi.fileTypes.StdFileTypes;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.SimpleToolWindowPanel;
 import com.intellij.openapi.wm.ToolWindow;
@@ -9,18 +13,19 @@ import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.openapi.wm.impl.ToolWindowImpl;
 import com.intellij.util.ui.tree.TreeUtil;
 import com.meredith.devtools.intellij.crx.repository.CrxRepository;
+import org.apache.commons.io.IOUtils;
+
 import java.awt.event.MouseAdapter;
 
-import javax.jcr.Node;
-import javax.jcr.Repository;
-import javax.jcr.RepositoryException;
+import javax.jcr.*;
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
-import java.awt.*;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.io.StringWriter;
 
 /**
  * Created by IntelliJ IDEA.
@@ -88,7 +93,43 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
                         popup.show( (JComponent)e.getSource(), e.getX(), e.getY() );
                     }
                 }
-                }
+
+                        @Override
+                        public void mousePressed(MouseEvent mouseEvent) {
+                            int selRow = tree.getRowForLocation(mouseEvent.getX(), mouseEvent.getY());
+                            TreePath selPath = tree.getPathForLocation(mouseEvent.getX(), mouseEvent.getY());
+                            if (selRow != -1) {
+                                if (mouseEvent.getClickCount() == 2) {
+                                    CrxNode node = (CrxNode) selPath.getLastPathComponent();
+                                    try {
+                                        if (node.getNode().getPrimaryNodeType().getName().equals("nt:file")) {
+                                            Node jcrContentNode = node.getNode().getNode("jcr:content");
+                                            if (jcrContentNode != null) {
+                                                Property data = jcrContentNode.getProperty("jcr:data");
+                                                if (data != null) {
+                                                    Binary binData = data.getBinary();
+                                                    if (binData != null) {
+                                                        StringWriter sw = new StringWriter();
+                                                        IOUtils.copy(binData.getStream(), sw, "UTF-8");
+                                                        String fileContents  = sw.toString();
+                                                        Document doc = EditorFactory.getInstance().createDocument(fileContents);
+                                                        Editor editor = EditorFactory.getInstance()
+                                                                .createEditor(doc, project, StdFileTypes.JSP, false);
+                                                        EditorFactory.getInstance().refreshAllEditors();
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    } catch (RepositoryException e) {
+                                        e.printStackTrace();
+                                    } catch (IOException e) {
+
+
+                                    }
+                                }
+                            }
+                        }
+                    }
             );
 
         } catch (RepositoryException e) {

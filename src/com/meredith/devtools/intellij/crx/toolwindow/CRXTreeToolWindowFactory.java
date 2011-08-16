@@ -1,8 +1,5 @@
 package com.meredith.devtools.intellij.crx.toolwindow;
 
-import com.intellij.ide.DataManager;
-import com.intellij.openapi.actionSystem.DataContext;
-import com.intellij.openapi.actionSystem.DataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.Disposer;
 import com.intellij.openapi.wm.ToolWindow;
@@ -11,6 +8,7 @@ import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentManager;
 import com.meredith.devtools.intellij.crx.repository.CrxRepository;
+import com.meredith.devtools.intellij.crx.repository.CrxRepositoryImpl;
 
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
@@ -34,7 +32,7 @@ public class CRXTreeToolWindowFactory implements ToolWindowFactory, TreeSelectio
     private Project project;
 
     public CRXTreeToolWindowFactory() {
-        repository = new CrxRepository("http://localhost:4502/crx/server", "admin", "admin");
+        repository = new CrxRepositoryImpl("http://localhost:4502/crx/server", "admin", "admin");
     }
 
 

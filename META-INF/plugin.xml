@@ -6,7 +6,10 @@
   <idea-version since-build="8000"/>
 
   <application-components>
-    <!-- Add your application components here -->
+      <component>
+        <interface-class>com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem</interface-class>
+        <implementation-class>com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem</implementation-class>
+      </component>
   </application-components>
 
   <project-components>
@@ -21,6 +24,8 @@
   </actions>
 
   <extensions defaultExtensionNs="com.intellij">
+      <applicationService serviceInterface="com.meredith.devtools.intellij.crx.repository.CrxRepositoryImpl"
+                     serviceImplementation="com.meredith.devtools.intellij.crx.repository.CrxRepositoryImpl"/>
     <!-- Add your extensions here -->
       <toolWindow
           id="CRX Repository Tree"
