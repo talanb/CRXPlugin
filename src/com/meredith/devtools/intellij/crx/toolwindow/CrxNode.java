@@ -1,5 +1,8 @@
 package com.meredith.devtools.intellij.crx.toolwindow;
 
+import com.intellij.openapi.vfs.VirtualFile;
+import com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile;
+import com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem;
 import org.apache.jackrabbit.util.ChildrenCollector;
 
 import javax.jcr.InvalidItemStateException;
@@ -18,6 +21,7 @@ public class CrxNode {
     private Node node;
     private List<CrxNode> children;
     private CrxNode parentNode;
+    private VirtualFile virtualFile;
 
     public CrxNode(Node node, CrxNode parentNode) {
         this.node = node;
@@ -30,6 +34,18 @@ public class CrxNode {
 
     public void setNode(Node node) {
         this.node = node;
+    }
+
+    public VirtualFile getVirtualFile() {
+        if (virtualFile == null) {
+            virtualFile = createVirtualFile();
+        }
+        return virtualFile;
+    }
+
+    private VirtualFile createVirtualFile() {
+        VirtualFile vf = new CrxVirtualFile(this);
+        return vf;
     }
 
     public CrxNode addChildNode(Node node) {

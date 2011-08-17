@@ -7,6 +7,8 @@ import com.meredith.devtools.intellij.crx.toolwindow.CrxNode;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
+import javax.jcr.AccessDeniedException;
+import javax.jcr.ItemNotFoundException;
 import javax.jcr.RepositoryException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,10 +22,10 @@ import java.util.Collection;
  * Time: 4:02 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CrxVirutalFile extends NewVirtualFile {
+public class CrxVirtualFile extends NewVirtualFile {
     private CrxNode crxNode;
 
-    public CrxVirutalFile(CrxNode crxNode) {
+    public CrxVirtualFile(CrxNode crxNode) {
         this.crxNode = crxNode;
     }
 
@@ -76,6 +78,12 @@ public class CrxVirutalFile extends NewVirtualFile {
     public NewVirtualFile getParent() {
         try {
             crxNode.getNode().getParent();
+        } catch (ItemNotFoundException e) {
+            e.printStackTrace();
+        } catch (AccessDeniedException e) {
+            e.printStackTrace();
+        } catch (RepositoryException e) {
+            e.printStackTrace();
         }
         return null;
     }

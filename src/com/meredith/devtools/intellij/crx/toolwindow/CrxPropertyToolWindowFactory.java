@@ -18,10 +18,6 @@ import javax.swing.*;
  * To change this template use File | Settings | File Templates.
  */
 public class CrxPropertyToolWindowFactory implements ToolWindowFactory {
-    private JPanel toolWindowContent;
-    private JTable propsTable;
-    ToolWindow toolWindow;
-    Project project;
 
     public void createToolWindowContent(Project project, ToolWindow toolWindow) {
         CrxPropertyView propertyView = new CrxPropertyView(project);

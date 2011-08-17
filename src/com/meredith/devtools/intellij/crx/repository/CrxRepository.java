@@ -1,5 +1,6 @@
 package com.meredith.devtools.intellij.crx.repository;
 
+import javax.jcr.Repository;
 import javax.jcr.Session;
 
 /**
@@ -10,5 +11,8 @@ import javax.jcr.Session;
  * To change this template use File | Settings | File Templates.
  */
 public interface CrxRepository {
+    void initialize(String url, String username, String password);
+    Repository getRepository();
     Session getSession();
+    boolean isInitialized();
 }

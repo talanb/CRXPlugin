@@ -17,7 +17,7 @@ import java.io.OutputStream;
  * Time: 3:54 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CrxVirtualFileSystem extends NewVirtualFileSystem implements ApplicationComponent {
+public class CrxVirtualFileSystem extends NewVirtualFileSystem {
     private Session session;
 
     public CrxVirtualFileSystem(Session session) {

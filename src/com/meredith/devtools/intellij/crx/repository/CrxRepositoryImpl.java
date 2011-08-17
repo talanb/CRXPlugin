@@ -10,10 +10,12 @@ import java.util.ServiceLoader;
 
 public class CrxRepositoryImpl implements CrxRepository {
     private Session session;
-    private String url;
-    private String user;
-    private String password;
+    private Repository repository;
     private boolean initialized;
+
+    public CrxRepositoryImpl() {
+        System.out.println("Test");
+    }
 
     public static CrxRepository getInstance() {
         return ServiceManager.getService(CrxRepositoryImpl.class);
@@ -21,6 +23,14 @@ public class CrxRepositoryImpl implements CrxRepository {
 
     public Session getSession() {
         return session;
+    }
+
+    public Repository getRepository() {
+        return repository;
+    }
+
+    public boolean isInitialized() {
+        return initialized;
     }
 
     private void dumpClassPath(Object obj) {
@@ -36,7 +46,7 @@ public class CrxRepositoryImpl implements CrxRepository {
         }
     }
 
-    private Session initialize(String url, String user, String password) {
+    public void initialize(String url, String user, String password) {
         dumpClassPath(this);
 
         Session session = null;
@@ -45,8 +55,7 @@ public class CrxRepositoryImpl implements CrxRepository {
             Map<String, String> parameters = new HashMap();
             parameters.put("org.apache.jackrabbit.repository.uri", "http://localhost:4502/crx/server");
             System.out.println("Loooping");
-            for (RepositoryFactory factory : ServiceLoader.load(RepositoryFactory.class,
-                                                                this.getClass().getClassLoader())) {
+            for (RepositoryFactory factory : ServiceLoader.load(RepositoryFactory.class, this.getClass().getClassLoader())) {
                 System.out.println("Trying " + factory.getClass().getName());
                 Repository repo = factory.getRepository(parameters);
                 if (repo == null) {
@@ -54,14 +63,14 @@ public class CrxRepositoryImpl implements CrxRepository {
                 }
                 SimpleCredentials creds = new SimpleCredentials("admin", "admin".toCharArray());
                 session = repo.login(creds, "crx.default");
+                repository = repo;
                 break;
             }
-            System.out.println("versioning? " + session.getRepository().getDescriptor("OPTION_VERSIONING_SUPPORTED"));
             initialized = true;
         } catch (RepositoryException e) {
             e.printStackTrace();
         }
-        return session;
+        this.session = session;
     }
 
     public void iterate(String path, DefaultMutableTreeNode treeNode) throws RepositoryException {

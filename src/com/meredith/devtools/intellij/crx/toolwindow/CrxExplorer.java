@@ -2,17 +2,23 @@ package com.meredith.devtools.intellij.crx.toolwindow;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.actionSystem.DataProvider;
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.EditorFactory;
+import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.fileTypes.StdFileTypes;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.SimpleToolWindowPanel;
+import com.intellij.openapi.vfs.VirtualFileManager;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.openapi.wm.impl.ToolWindowImpl;
 import com.intellij.util.ui.tree.TreeUtil;
+import com.meredith.devtools.intellij.crx.CrxApplicationComponent;
 import com.meredith.devtools.intellij.crx.repository.CrxRepository;
+import com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem;
+import com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile;
 import org.apache.commons.io.IOUtils;
 
 import java.awt.event.MouseAdapter;
@@ -112,6 +118,12 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
                                                         StringWriter sw = new StringWriter();
                                                         IOUtils.copy(binData.getStream(), sw, "UTF-8");
                                                         String fileContents  = sw.toString();
+                                                        CrxApplicationComponent comp =
+                                                        ApplicationManager.getApplication().getComponent(CrxApplicationComponent.class);
+
+                                                        CrxVirtualFileSystem vfs = (CrxVirtualFileSystem) VirtualFileManager
+                                                                .getInstance().getFileSystem("CRX");
+                                                        FileEditorManager.getInstance(project).openFile(new CrxVirtualFile(node), true);
                                                         Document doc = EditorFactory.getInstance().createDocument(fileContents);
                                                         Editor editor = EditorFactory.getInstance()
                                                                 .createEditor(doc, project, StdFileTypes.JSP, false);

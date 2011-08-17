@@ -13,9 +13,17 @@ import org.jetbrains.annotations.NotNull;
  * Time: 2:13 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CrxApplicationComponent extends ApplicationComponent {
+public class CrxApplicationComponent implements ApplicationComponent {
+    private CrxRepository repository;
+
+    public CrxRepository getRepository() {
+        return repository;
+    }
+
+
     public void initComponent() {
-        CrxRepository repository = CrxRepositoryImpl.getInstance().initialize("http://localhost:4502/crx/server", "admin", "admin");
+        repository = new CrxRepositoryImpl();
+        repository.initialize("http://localhost:4502/crx/server", "admin", "admin");
     }
 
     public void disposeComponent() {
@@ -23,6 +31,6 @@ public class CrxApplicationComponent extends ApplicationComponent {
 
     @NotNull
     public String getComponentName() {
-        return null;
+        return "CrxApplicationComponent";
     }
 }
