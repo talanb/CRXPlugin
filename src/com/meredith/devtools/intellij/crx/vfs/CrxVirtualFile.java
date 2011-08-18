@@ -132,7 +132,7 @@ public class CrxVirtualFile extends NewVirtualFile {
 
     @NotNull
     @Override
-    public OutputStream getOutputStream(Object o, long l, long l1) throws IOException {
+    public OutputStream getOutputStream(Object requestor, long newModificationStamp, long newTimeStamp) throws IOException {
         return null;
     }
 
