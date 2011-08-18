@@ -98,7 +98,7 @@ public class CrxVirtualFile extends NewVirtualFile {
 
     @Override
     public boolean isWritable() {
-        return false;
+        return true;
     }
 
     @Override
