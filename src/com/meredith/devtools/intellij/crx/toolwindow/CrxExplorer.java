@@ -123,7 +123,7 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
 
                                                         CrxVirtualFileSystem vfs = (CrxVirtualFileSystem) VirtualFileManager
                                                                 .getInstance().getFileSystem("CRX");
-                                                        FileEditorManager.getInstance(project).openFile(new CrxVirtualFile(node), true);
+                                                        FileEditorManager.getInstance(project).openFile(new CrxVirtualFile(node, fileContents), true);
                                                         Document doc = EditorFactory.getInstance().createDocument(fileContents);
                                                         Editor editor = EditorFactory.getInstance()
                                                                 .createEditor(doc, project, StdFileTypes.JSP, false);

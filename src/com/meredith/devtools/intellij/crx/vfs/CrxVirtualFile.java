@@ -1,5 +1,6 @@
 package com.meredith.devtools.intellij.crx.vfs;
 
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.vfs.newvfs.NewVirtualFile;
 import com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem;
@@ -24,9 +25,11 @@ import java.util.Collection;
  */
 public class CrxVirtualFile extends NewVirtualFile {
     private CrxNode crxNode;
+    private String contents;
 
-    public CrxVirtualFile(CrxNode crxNode) {
+    public CrxVirtualFile(CrxNode crxNode, String contents) {
         this.crxNode = crxNode;
+        this.contents = contents;
     }
 
     @NotNull
@@ -41,10 +44,33 @@ public class CrxVirtualFile extends NewVirtualFile {
         return name;
     }
 
+    public String getContents() {
+        return contents;
+    }
+
     @NotNull
     @Override
     public NewVirtualFileSystem getFileSystem() {
-        throw new UnsupportedOperationException("getFileSystem is not implemented");
+        return ApplicationManager.getApplication().getComponent(CrxVirtualFileSystem.class);
+    }
+
+    @NotNull
+    @Override
+    public byte[] contentsToByteArray() throws IOException {
+        return contents.getBytes("UTF-8");
+    }
+
+    @Override
+    public boolean isValid() {
+        boolean valid = false;
+            if (crxNode != null && crxNode.getNode() != null) {
+                try {
+                    valid = crxNode.getNode().getPrimaryNodeType().getName().equals("nt:file");
+                } catch (RepositoryException e) {
+                    e.printStackTrace();
+                }
+            }
+        return valid;
     }
 
     @Override
@@ -61,7 +87,13 @@ public class CrxVirtualFile extends NewVirtualFile {
     @NotNull
     @Override
     public String getUrl() {
-        return null;
+        String url = "";
+        try{
+            url = crxNode.getNode().getPath();
+        } catch (RepositoryException e) {
+            e.printStackTrace();
+        }
+        return url;
     }
 
     @Override

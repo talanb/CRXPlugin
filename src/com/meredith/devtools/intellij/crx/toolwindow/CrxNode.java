@@ -44,8 +44,7 @@ public class CrxNode {
     }
 
     private VirtualFile createVirtualFile() {
-        VirtualFile vf = new CrxVirtualFile(this);
-        return vf;
+        return new CrxVirtualFile(this, "");
     }
 
     public CrxNode addChildNode(Node node) {
