@@ -9,6 +9,10 @@
         <interface-class>com.meredith.devtools.intellij.crx.CrxApplicationComponent</interface-class>
         <implementation-class>com.meredith.devtools.intellij.crx.CrxApplicationComponent</implementation-class>
       </component>
+      <component>
+          <interface-class>com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem</interface-class>
+          <implementation-class>com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem</implementation-class>
+      </component>
   </application-components>
 
   <project-components>
@@ -39,6 +43,7 @@
           secondary="true"
           factoryClass="com.meredith.devtools.intellij.crx.toolwindow.CrxPropertyToolWindowFactory">
       </toolWindow>
-      <virtualFileSystem key="crx" implementationClass="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem"/>
+      <!-- IntelliJ IDEA 11 Only-->
+      <!--<virtualFileSystem key="crx" implementationClass="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem"/>-->
   </extensions>
 </idea-plugin>

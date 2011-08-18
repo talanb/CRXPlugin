@@ -18,11 +18,11 @@ import java.io.OutputStream;
  * To change this template use File | Settings | File Templates.
  */
 public class CrxVirtualFileSystem extends NewVirtualFileSystem {
-    private Session session;
-
-    public CrxVirtualFileSystem(Session session) {
-        this.session = session;
-    }
+//    private Session session;
+//
+//    public CrxVirtualFileSystem(Session session) {
+//        this.session = session;
+//    }
 
     @Override
     public boolean isCaseSensitive() {
@@ -80,6 +80,7 @@ public class CrxVirtualFileSystem extends NewVirtualFileSystem {
     }
 
     public void setTimeStamp(VirtualFile virtualFile, long l) throws IOException {
+        System.out.println("setTimeStamp");
     }
 
     public boolean isWritable(VirtualFile virtualFile) {
@@ -87,6 +88,7 @@ public class CrxVirtualFileSystem extends NewVirtualFileSystem {
     }
 
     public void setWritable(VirtualFile virtualFile, boolean b) throws IOException {
+        System.out.println("setWritable");
     }
 
     @NotNull
@@ -108,20 +110,25 @@ public class CrxVirtualFileSystem extends NewVirtualFileSystem {
 
     @Override
     public void deleteFile(Object o, @NotNull VirtualFile virtualFile) throws IOException {
+        System.out.println("deleteFile");
     }
 
     @Override
     public void moveFile(Object o, @NotNull VirtualFile virtualFile, @NotNull VirtualFile virtualFile1) throws IOException {
+        System.out.println("moveFile");
     }
 
     @Override
     public void renameFile(Object o, @NotNull VirtualFile virtualFile, @NotNull String s) throws IOException {
+        System.out.println("renameFile");
     }
 
     public void initComponent() {
+        System.out.println("initComponent");
     }
 
     public void disposeComponent() {
+        System.out.println("disposeComponent");
     }
 
     @NotNull

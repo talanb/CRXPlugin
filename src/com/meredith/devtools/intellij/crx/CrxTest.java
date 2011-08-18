@@ -24,7 +24,7 @@ public class CrxTest {
 
     private void run() throws Exception {
         Session session = null;
-        Map<String, String> parameters = new HashMap();
+        Map<String, String> parameters = new HashMap<String, String>();
         parameters.put("org.apache.jackrabbit.repository.uri", "http://localhost:4502/crx/server");
         System.out.println("Loooping");
         for (RepositoryFactory factory : ServiceLoader.load(RepositoryFactory.class,

@@ -1,6 +1,8 @@
 package com.meredith.devtools.intellij.crx.repository;
 
 import com.intellij.openapi.components.ServiceManager;
+import com.intellij.openapi.project.ProjectManager;
+import com.intellij.openapi.ui.Messages;
 
 import javax.jcr.*;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -65,6 +67,10 @@ public class CrxRepositoryImpl implements CrxRepository {
                 session = repo.login(creds, "crx.default");
                 repository = repo;
                 break;
+            }
+            if (repository == null) {
+                Messages.showErrorDialog(ProjectManager.getInstance().getDefaultProject(), "CRX Does not appear to be running.", "CRX instance not found");
+                return;
             }
             initialized = true;
         } catch (RepositoryException e) {
