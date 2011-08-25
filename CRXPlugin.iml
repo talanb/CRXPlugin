@@ -44,7 +44,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-jcr2dav-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-jcr2dav/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -53,7 +55,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-spi-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-spi/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -62,7 +66,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-spi2dav-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-spi2dav/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -71,7 +77,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-spi-commons-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-spi-commons/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -80,7 +88,9 @@
           <root url="jar://$MODULE_DIR$/lib/jcr-2.0.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/jcr2.0" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -89,7 +99,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-webdav-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-webdav/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -125,7 +137,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-core-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-core/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -134,7 +148,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-jcr-commons-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-jcr-commons/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -161,7 +177,9 @@
           <root url="jar://$MODULE_DIR$/lib/jackrabbit-jcr2spi-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://D:/src/apache-jackrabbit-2.2.4/jackrabbit-jcr2spi/src/main/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">

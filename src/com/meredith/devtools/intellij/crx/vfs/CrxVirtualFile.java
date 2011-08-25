@@ -1,15 +1,16 @@
 package com.meredith.devtools.intellij.crx.vfs;
 
 import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.fileEditor.impl.FileDocumentManagerImpl;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.vfs.VirtualFileSystem;
+import com.meredith.devtools.intellij.crx.toolwindow.BinaryDataOutputStream;
 import com.meredith.devtools.intellij.crx.toolwindow.CrxNode;
+import org.apache.jackrabbit.value.BinaryValue;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
-import javax.jcr.AccessDeniedException;
-import javax.jcr.ItemNotFoundException;
-import javax.jcr.RepositoryException;
+import javax.jcr.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -132,7 +133,26 @@ public class CrxVirtualFile extends VirtualFile {
     @NotNull
     @Override
     public OutputStream getOutputStream(Object requestor, long newModificationStamp, long newTimeStamp) throws IOException {
-        return null;
+        System.out.println("in getOutputStream");
+        OutputStream os = null;
+        try {
+            if (crxNode.getNode().getPrimaryNodeType().getName().equals("nt:file")) {
+                Node jcrContentNode = crxNode.getNode().getNode("jcr:content");
+                if (jcrContentNode != null) {
+                    Property data = jcrContentNode.getProperty("jcr:data");
+                    if (data != null) {
+                        os = new BinaryDataOutputStream(data);
+                    }
+                }
+            }
+        } catch (ValueFormatException e) {
+            e.printStackTrace();
+        } catch (PathNotFoundException e) {
+            e.printStackTrace();
+        } catch (RepositoryException e) {
+            e.printStackTrace();
+        }
+        return os;
     }
 
     @Override
