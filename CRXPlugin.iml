@@ -182,6 +182,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="FileVault" level="project" />
   </component>
 </module>
 

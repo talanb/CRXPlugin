@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="FileVault">
+    <CLASSES>
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-vlt-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-packaging-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-fs-spi-jcr20-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-fs-spi-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-fs-api-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-fs-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-davex-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-commons-2.3.6.jar!/" />
+      <root url="jar://C:/day/cq5/crx-quickstart/opt/filevault/filevault/vault-cli-2.3.6/lib/vault-cli-2.3.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

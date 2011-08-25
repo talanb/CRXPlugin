@@ -2,8 +2,7 @@ package com.meredith.devtools.intellij.crx.vfs;
 
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.openapi.vfs.newvfs.NewVirtualFile;
-import com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem;
+import com.intellij.openapi.vfs.VirtualFileSystem;
 import com.meredith.devtools.intellij.crx.toolwindow.CrxNode;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
@@ -23,7 +22,7 @@ import java.util.Collection;
  * Time: 4:02 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CrxVirtualFile extends NewVirtualFile {
+public class CrxVirtualFile extends VirtualFile {
     private CrxNode crxNode;
     private String contents;
 
@@ -50,7 +49,7 @@ public class CrxVirtualFile extends NewVirtualFile {
 
     @NotNull
     @Override
-    public NewVirtualFileSystem getFileSystem() {
+    public VirtualFileSystem getFileSystem() {
         return ApplicationManager.getApplication().getComponent(CrxVirtualFileSystem.class);
     }
 
@@ -107,7 +106,7 @@ public class CrxVirtualFile extends NewVirtualFile {
     }
 
     @Override
-    public NewVirtualFile getParent() {
+    public VirtualFile getParent() {
         try {
             crxNode.getNode().getParent();
         } catch (ItemNotFoundException e) {
@@ -126,7 +125,7 @@ public class CrxVirtualFile extends NewVirtualFile {
     }
 
     @Override
-    public NewVirtualFile findChild(@NotNull @NonNls String s) {
+    public VirtualFile findChild(@NotNull @NonNls String s) {
         return null;
     }
 
@@ -147,76 +146,19 @@ public class CrxVirtualFile extends NewVirtualFile {
     }
 
     @Override
+    public long getModificationStamp() {
+      return 0;
+    }
+
+
+    @Override
+    public void refresh(boolean asynchronous, boolean recursive, Runnable postRunnable) {
+        System.out.println("in refresh");
+    }
+
+    @Override
     public InputStream getInputStream() throws IOException {
         return null;
     }
 
-    @Override
-    public NewVirtualFile refreshAndFindChild(String s) {
-        return null;
-    }
-
-    @Override
-    public NewVirtualFile findChildIfCached(String s) {
-        return null;
-    }
-
-    @Override
-    public void setTimeStamp(long l) throws IOException {
-    }
-
-    @Override
-    public int getId() {
-        return 0;
-    }
-
-    @Override
-    public NewVirtualFile findChildById(int i) {
-        return null;
-    }
-
-    @Override
-    public NewVirtualFile findChildByIdIfCached(int i) {
-        return null;
-    }
-
-    @Override
-    public void setWritable(boolean b) throws IOException {
-    }
-
-    @Override
-    public void markDirty() {
-    }
-
-    @Override
-    public void markDirtyRecursively() {
-    }
-
-    @Override
-    public boolean isDirty() {
-        return false;
-    }
-
-    @Override
-    public void markClean() {
-    }
-
-    @Override
-    public Collection<VirtualFile> getCachedChildren() {
-        return null;
-    }
-
-    @Override
-    public Iterable<VirtualFile> iterInDbChildren() {
-        return null;
-    }
-
-    @Override
-    public void setFlag(int i, boolean b) {
-    }
-
-    @Override
-    public boolean getFlag(int i) {
-        return false;
-    }
 }

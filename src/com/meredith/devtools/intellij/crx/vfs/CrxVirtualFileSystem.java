@@ -1,11 +1,11 @@
 package com.meredith.devtools.intellij.crx.vfs;
 
-import com.intellij.openapi.components.ApplicationComponent;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem;
+import com.intellij.openapi.vfs.VirtualFileListener;
+import com.intellij.openapi.vfs.VirtualFileSystem;
+import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
-import javax.jcr.Session;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -17,7 +17,7 @@ import java.io.OutputStream;
  * Time: 3:54 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CrxVirtualFileSystem extends NewVirtualFileSystem {
+public class CrxVirtualFileSystem extends VirtualFileSystem {
 //    private Session session;
 //
 //    public CrxVirtualFileSystem(Session session) {
@@ -25,23 +25,14 @@ public class CrxVirtualFileSystem extends NewVirtualFileSystem {
 //    }
 
     @Override
-    public boolean isCaseSensitive() {
-        return false;
-    }
-
-    @Override
-    protected String extractRootPath(@NotNull String s) {
-        return null;
-    }
-
-    @Override
-    public int getRank() {
-        return 0;
-    }
-
-    @Override
     public VirtualFile copyFile(Object o, @NotNull VirtualFile virtualFile, @NotNull VirtualFile virtualFile1, @NotNull String s) throws IOException {
         return null;
+    }
+
+    @Override
+    public boolean isReadOnly() {
+        System.out.println("in isReadOnly");
+        return false;
     }
 
     @NotNull
@@ -106,6 +97,33 @@ public class CrxVirtualFileSystem extends NewVirtualFileSystem {
     @Override
     public String getProtocol() {
         return "CRX";
+    }
+
+    @Override
+    public VirtualFile findFileByPath(@NotNull @NonNls String path) {
+        System.out.println("in findFileByPath");
+        return new CrxVirtualFile(null, null);
+    }
+
+    @Override
+    public void refresh(boolean asynchronous) {
+        System.out.println("in refresh");
+    }
+
+    @Override
+    public VirtualFile refreshAndFindFileByPath(@NotNull String path) {
+        System.out.println("in refreshAndFindFileByPath");
+        return null;
+    }
+
+    @Override
+    public void addVirtualFileListener(@NotNull VirtualFileListener listener) {
+
+    }
+
+    @Override
+    public void removeVirtualFileListener(@NotNull VirtualFileListener listener) {
+        System.out.println("in removeVirtualFileListener");
     }
 
     @Override

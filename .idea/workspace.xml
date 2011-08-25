@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3735f5ba-40a5-4990-941a-b62f8212c12a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/FileVault.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRXPlugin.iml" afterPath="$PROJECT_DIR$/CRXPlugin.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" afterPath="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" afterPath="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" />
     </list>
     <ignored path="CRXPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +27,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="30" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="29" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -48,7 +53,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxExplorer.java" line="120" class="com.meredith.devtools.intellij.crx.toolwindow.CrxExplorer$2" package="com.meredith.devtools.intellij.crx.toolwindow">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="123" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -61,7 +66,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="124" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="128" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -74,7 +79,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="129" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="134" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -87,46 +92,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="135" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="145" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="150" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="155" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="144" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -152,84 +118,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="174" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="179" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="196" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="205" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="210" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="219" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="28" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -243,7 +131,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="33" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="39" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -256,7 +144,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="38" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="44" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -269,20 +157,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="43" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="48" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="49" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -308,7 +183,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="58" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="57" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -321,7 +196,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="62" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="61" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -334,7 +209,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="66" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="65" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -347,7 +222,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="70" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="69" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -360,7 +235,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="74" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="77" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -373,7 +248,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="78" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="87" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -386,7 +261,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="86" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="92" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -399,7 +274,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="96" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="153" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -412,7 +287,46 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="101" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="73" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="148" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="144" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="140" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -438,19 +352,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="82" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="130" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -464,85 +365,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="126" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="122" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="117" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="112" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="90" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxExplorer.java" line="126" class="com.meredith.devtools.intellij.crx.toolwindow.CrxExplorer$2" package="com.meredith.devtools.intellij.crx.toolwindow">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/impl/FileEditorManagerImpl.java" line="571" class="com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl" package="com.intellij.openapi.fileEditor.impl">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="81" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -556,71 +379,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxNode.java" line="46" class="com.meredith.devtools.intellij.crx.toolwindow.CrxNode" package="com.meredith.devtools.intellij.crx.toolwindow">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java" line="43" class="com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem" package="com.intellij.openapi.vfs.newvfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java" line="69" class="com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem" package="com.intellij.openapi.vfs.newvfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java" line="92" class="com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem" package="com.intellij.openapi.vfs.newvfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java" line="115" class="com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem" package="com.intellij.openapi.vfs.newvfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java" line="119" class="com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem" package="com.intellij.openapi.vfs.newvfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -647,6 +405,149 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java" line="127" class="com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem" package="com.intellij.openapi.vfs.newvfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFile.java" line="108" class="com.intellij.openapi.vfs.newvfs.NewVirtualFile" package="com.intellij.openapi.vfs.newvfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFile.java" line="130" class="com.intellij.openapi.vfs.newvfs.NewVirtualFile" package="com.intellij.openapi.vfs.newvfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="155" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="103" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="109" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="114" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="120" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" line="125" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="58" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" line="46" class="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile" package="com.meredith.devtools.intellij.crx.vfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFile.java" line="559" class="com.intellij.openapi.vfs.VirtualFile" package="com.intellij.openapi.vfs">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -717,76 +618,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CrxExplorer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxExplorer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="0" selection-start="6372" selection-end="6372" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileEditorManagerEx.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/ex/FileEditorManagerEx.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="0" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdeEventQueue.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="intellijad://intellijad/com/intellij/ide/IdeEventQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="53" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrxVirtualFile.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CrxVirtualFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="58" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.21176471">
+            <state line="139" column="0" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#getContents#0;class#CrxVirtualFile#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileEditorManagerListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/fileEditor/FileEditorManagerListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="41" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrxTreeSnapshot.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxTreeSnapshot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrxRepositoryImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/repository/CrxRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrxRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/repository/CrxRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -794,7 +633,72 @@
       <file leaf-file-name="CrxVirtualFileSystem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="49" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+            <state line="119" column="16" selection-start="3149" selection-end="3149" vertical-scroll-proportion="-6.88">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeprecatedVirtualFileSystem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/DeprecatedVirtualFileSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="54" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualFileListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="27" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileManagerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/lang-impl/src/com/intellij/psi/impl/file/impl/FileManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="642" column="51" selection-start="24113" selection-end="24113" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualFileAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="16" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualFileWrapper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="13" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.06642067">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DummyFileSystem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/vfs/ex/dummy/DummyFileSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="42" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JarFileSystem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/JarFileSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="22" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -803,8 +707,10 @@
       <file leaf-file-name="NewVirtualFileSystem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="111" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="35" column="54" selection-start="1196" selection-end="1196" vertical-scroll-proportion="-16.32">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -812,25 +718,27 @@
       <file leaf-file-name="VirtualFileSystem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="22" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
+            <state line="106" column="31" selection-start="4062" selection-end="4062" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="docComment;method#addVirtualFileListener#0;class#VirtualFileSystem#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextEditorProvider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/impl/text/TextEditorProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="0" selection-start="3099" selection-end="3099" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileEditorManagerImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/impl/FileEditorManagerImpl.java">
+      <file leaf-file-name="FileEditorProviderManagerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/impl/FileEditorProviderManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="571" column="0" selection-start="19862" selection-end="19862" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewVirtualFile.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="20" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.0">
+            <state line="70" column="0" selection-start="2938" selection-end="2938" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -857,7 +765,7 @@
       <file leaf-file-name="VirtualFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="523" column="109" selection-start="19591" selection-end="19653" vertical-scroll-proportion="0.0">
+            <state line="558" column="28" selection-start="20645" selection-end="20645" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -921,9 +829,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/NodeCellRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="61" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="docComment;class#NodeCellRenderer#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1015,10 +921,10 @@
         <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/CrxTest.java" />
         <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/repository/CrxRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
-        <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" />
         <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxExplorer.java" />
         <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxNode.java" />
         <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java" />
+        <option value="$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java" />
       </list>
     </option>
   </component>
@@ -1077,9 +983,21 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CRXPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="CRXPlugin" />
@@ -1131,6 +1049,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CRXPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-107.322 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CRXPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-107.322 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vfs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1205,58 +1179,6 @@
               <option name="myItemId" value="toolwindow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrxPropertyView" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toolwindow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrxExplorer" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toolwindow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1280,38 +1202,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRXPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1601,17 +1493,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279762" sideWeight="0.6754967" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21845238" sideWeight="0.6754967" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327551" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32636815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3273632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23673469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1620,15 +1510,17 @@
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1845238" sideWeight="0.6726368" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27860695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2125" sideWeight="0.672449" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27857143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21785714" sideWeight="0.6754967" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32636815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1705,119 +1597,123 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxPropertyToolWindowFactory.java">
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/JarFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/fileEditor/FileEditorManagerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/impl/FileEditorManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="571" column="0" selection-start="19862" selection-end="19862" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="6372" selection-end="6372" vertical-scroll-proportion="0.0">
+        <state line="28" column="22" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="111" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/vfs/impl/http/VirtualFileImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="17" selection-start="4289" selection-end="4289" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxPropertyView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxNodeTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="51" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/CrxTreeCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="27" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/fileEditor/FileEditorManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="40" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/toolwindow/NodeCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
+        <state line="35" column="54" selection-start="1196" selection-end="1196" vertical-scroll-proportion="-16.32">
           <folding>
-            <element signature="docComment;class#NodeCellRenderer#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFile.java">
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/vfs/impl/VirtualFileManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="523" column="109" selection-start="19591" selection-end="19653" vertical-scroll-proportion="0.0">
+        <state line="267" column="69" selection-start="9749" selection-end="9768" vertical-scroll-proportion="0.33273056">
+          <folding>
+            <element signature="class#LoggingListener#0;class#VirtualFileManagerImpl#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="31" selection-start="4062" selection-end="4062" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="docComment;method#addVirtualFileListener#0;class#VirtualFileSystem#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="16" selection-start="3149" selection-end="3149" vertical-scroll-proportion="-6.88">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/lang-impl/src/com/intellij/psi/impl/PsiManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="353" column="0" selection-start="12639" selection-end="12639" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meredith/devtools/intellij/crx/vfs/CrxVirtualFile.java">
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/vfs/ex/dummy/DummyFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="58" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.21176471">
-          <folding>
-            <element signature="method#getContents#0;class#CrxVirtualFile#0" expanded="true" />
-          </folding>
+        <state line="31" column="42" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/DeprecatedVirtualFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="54" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/vfs/impl/local/LocalFileSystemBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="27" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/vfs/impl/local/LocalFileSystemImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="0" selection-start="7241" selection-end="7241" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/lang-impl/src/com/intellij/psi/impl/file/impl/FileManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="642" column="51" selection-start="24113" selection-end="24113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/newvfs/NewVirtualFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-impl/src/com/intellij/openapi/fileEditor/impl/FileEditorManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="650" column="0" selection-start="23142" selection-end="23142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/src/ideaIC-107.105/platform/platform-api/src/com/intellij/openapi/vfs/VirtualFileWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.06642067">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1900,6 +1796,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>FileVault</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
