@@ -1,4 +1,4 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
 import com.meredith.devtools.intellij.crx.repository.CrxRepository;
 

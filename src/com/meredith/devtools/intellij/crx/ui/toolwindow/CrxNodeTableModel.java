@@ -1,4 +1,4 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
 import javax.jcr.*;
 import javax.jcr.lock.LockException;
@@ -6,10 +6,7 @@ import javax.jcr.nodetype.ConstraintViolationException;
 import javax.jcr.version.VersionException;
 import javax.jcr.version.VersionManager;
 import javax.swing.table.AbstractTableModel;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class CrxNodeTableModel extends AbstractTableModel {

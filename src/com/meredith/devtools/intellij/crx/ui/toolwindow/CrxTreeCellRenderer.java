@@ -1,14 +1,11 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
 import com.intellij.openapi.util.IconLoader;
-import com.intellij.util.containers.SortedList;
-import org.apache.commons.collections.ComparatorUtils;
 
 import javax.jcr.RepositoryException;
 import javax.swing.*;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import java.awt.*;
-import java.util.*;
 
 /**
  * Created by IntelliJ IDEA.

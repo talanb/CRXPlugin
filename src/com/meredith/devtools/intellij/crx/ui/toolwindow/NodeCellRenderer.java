@@ -1,7 +1,6 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
 import javax.jcr.Property;
-import javax.jcr.PropertyIterator;
 import javax.jcr.RepositoryException;
 import javax.jcr.Value;
 import javax.swing.*;

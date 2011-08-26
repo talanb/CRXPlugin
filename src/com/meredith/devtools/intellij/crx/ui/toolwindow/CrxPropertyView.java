@@ -1,10 +1,9 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.actionSystem.DataProvider;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.SimpleToolWindowPanel;
-import com.intellij.ui.table.JBTable;
 
 import javax.swing.*;
 import javax.swing.table.TableColumn;

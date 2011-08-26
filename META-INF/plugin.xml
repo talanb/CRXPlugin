@@ -35,13 +35,13 @@
           id="CRX Repository Tree"
           anchor="left"
           secondary="true"
-          factoryClass="com.meredith.devtools.intellij.crx.toolwindow.CrxTreeToolWindowFactory">
+          factoryClass="com.meredith.devtools.intellij.crx.ui.toolwindow.CrxTreeToolWindowFactory">
       </toolWindow>
       <toolWindow
           id="CRX Property View"
           anchor="bottom"
           secondary="true"
-          factoryClass="com.meredith.devtools.intellij.crx.toolwindow.CrxPropertyToolWindowFactory">
+          factoryClass="com.meredith.devtools.intellij.crx.ui.toolwindow.CrxPropertyToolWindowFactory">
       </toolWindow>
       <!-- IntelliJ IDEA 11 Only-->
       <!--<virtualFileSystem key="crx" implementationClass="com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem"/>-->

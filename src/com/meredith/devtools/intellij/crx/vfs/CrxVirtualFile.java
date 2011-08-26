@@ -1,12 +1,9 @@
 package com.meredith.devtools.intellij.crx.vfs;
 
 import com.intellij.openapi.application.ApplicationManager;
-import com.intellij.openapi.fileEditor.impl.FileDocumentManagerImpl;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.vfs.VirtualFileSystem;
-import com.meredith.devtools.intellij.crx.toolwindow.BinaryDataOutputStream;
-import com.meredith.devtools.intellij.crx.toolwindow.CrxNode;
-import org.apache.jackrabbit.value.BinaryValue;
+import com.meredith.devtools.intellij.crx.ui.toolwindow.CrxNode;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
@@ -14,7 +11,6 @@ import javax.jcr.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Collection;
 
 /**
  * Created by IntelliJ IDEA.

@@ -1,4 +1,4 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.vfs;
 
 import org.apache.jackrabbit.value.BinaryValue;
 

@@ -1,4 +1,4 @@
-package com.meredith.devtools.intellij.crx.toolwindow;
+package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.actionSystem.DataProvider;
@@ -19,6 +19,7 @@ import com.meredith.devtools.intellij.crx.CrxApplicationComponent;
 import com.meredith.devtools.intellij.crx.repository.CrxRepository;
 import com.meredith.devtools.intellij.crx.vfs.CrxVirtualFileSystem;
 import com.meredith.devtools.intellij.crx.vfs.CrxVirtualFile;
+import org.apache.batik.apps.svgbrowser.PNGOptionPanel;
 import org.apache.commons.io.IOUtils;
 
 import java.awt.event.MouseAdapter;
@@ -49,7 +50,7 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
     CrxRepository repository;
 
     public CrxExplorer(Project project, CrxRepository repository) {
-        super(true,true);
+        super(true, true);
         this.project = project;
         this.repository = repository;
         setContent(toolWindow);
@@ -70,7 +71,8 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
                     }
 
                     final Node node = crxNode.getNode();
-                    final ToolWindow toolWindow = ToolWindowManager.getInstance(project).getToolWindow("CRX Property View");
+                    final ToolWindow toolWindow = ToolWindowManager.getInstance(project)
+                            .getToolWindow("CRX Property View");
 
                     toolWindow.activate(new Runnable() {
                         public void run() {
@@ -91,14 +93,24 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
             });
             tree.addMouseListener(
                     new MouseAdapter() {
-                public void mouseReleased( MouseEvent e ) {
-                    JPopupMenu popup = new JPopupMenu();
-                    JMenuItem refreshItem = new JMenuItem("Refresh (Not Implemented)");
-                    popup.add(refreshItem);
-                    if (SwingUtilities.isRightMouseButton(e)) {
-                        popup.show( (JComponent)e.getSource(), e.getX(), e.getY() );
-                    }
-                }
+                        public void mouseReleased(MouseEvent e) {
+                            int selRow = tree.getRowForLocation(e.getX(), e.getY());
+                            TreePath selPath = tree.getPathForLocation(e.getX(), e.getY());
+                            if (selRow != -1) {
+                                CrxNode node = (CrxNode) selPath.getLastPathComponent();
+                                JPopupMenu popup = new JPopupMenu();
+                                JMenuItem newFolderItem = new JMenuItem("New Folder...");
+                                newFolderItem.addActionListener(new CrxTreeContextMenuListener(node));
+                                popup.add(newFolderItem);
+                                JMenuItem refreshItem = new JMenuItem("Refresh (Not Implemented)");
+                                popup.add(refreshItem);
+                                if (SwingUtilities.isRightMouseButton(e)) {
+                                    popup.show((JComponent) e.getSource(), e.getX(), e.getY());
+                                }
+
+
+                            }
+                        }
 
                         @Override
                         public void mousePressed(MouseEvent mouseEvent) {
@@ -117,14 +129,17 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
                                                     if (binData != null) {
                                                         StringWriter sw = new StringWriter();
                                                         IOUtils.copy(binData.getStream(), sw, "UTF-8");
-                                                        String fileContents  = sw.toString();
+                                                        String fileContents = sw.toString();
                                                         CrxApplicationComponent comp =
-                                                        ApplicationManager.getApplication().getComponent(CrxApplicationComponent.class);
+                                                                ApplicationManager.getApplication()
+                                                                        .getComponent(CrxApplicationComponent.class);
 
                                                         CrxVirtualFileSystem vfs = (CrxVirtualFileSystem) VirtualFileManager
                                                                 .getInstance().getFileSystem("CRX");
-                                                        FileEditorManager.getInstance(project).openFile(new CrxVirtualFile(node, fileContents), true);
-                                                        Document doc = EditorFactory.getInstance().createDocument(fileContents);
+                                                        FileEditorManager.getInstance(project)
+                                                                .openFile(new CrxVirtualFile(node, fileContents), true);
+                                                        Document doc = EditorFactory.getInstance()
+                                                                .createDocument(fileContents);
                                                         Editor editor = EditorFactory.getInstance()
                                                                 .createEditor(doc, project, StdFileTypes.JSP, false);
                                                         EditorFactory.getInstance().refreshAllEditors();
