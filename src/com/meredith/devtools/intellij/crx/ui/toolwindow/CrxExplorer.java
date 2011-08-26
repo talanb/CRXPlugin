@@ -8,6 +8,7 @@ import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.EditorFactory;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.fileTypes.StdFileTypes;
+import com.intellij.openapi.graph.layout.labeling.GreedyMISLabeling;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.SimpleToolWindowPanel;
 import com.intellij.openapi.vfs.VirtualFileManager;
@@ -54,6 +55,9 @@ public class CrxExplorer extends SimpleToolWindowPanel implements DataProvider, 
         this.project = project;
         this.repository = repository;
         setContent(toolWindow);
+    }
+    public void refreshNode(CrxNode node) {
+
     }
 
     public void initTree() {

@@ -230,4 +230,12 @@ public class CrxNode {
     public VersionManager getVersionManager() throws RepositoryException {
         return getNode().getSession().getWorkspace().getVersionManager();
     }
+
+    public void save() throws RepositoryException {
+        this.getNode().getSession().save();
+    }
+
+    public void addNode(CrxNode newCrxNode) {
+        children.add(newCrxNode);
+    }
 }

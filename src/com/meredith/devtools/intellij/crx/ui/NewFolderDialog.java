@@ -1,57 +1,44 @@
 package com.meredith.devtools.intellij.crx.ui;
 
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.DialogWrapper;
 import com.meredith.devtools.intellij.crx.ui.toolwindow.CrxNode;
 
+import javax.jcr.RepositoryException;
 import javax.swing.*;
-import java.awt.event.*;
 
-public class NewFolderDialog extends JDialog {
-    private JPanel contentPane;
-    private JButton buttonOK;
-    private JButton buttonCancel;
-    private JTextField folderNameTextField;
+/**
+ * Created by IntelliJ IDEA.
+ * User: tbreihol
+ * Date: 8/26/11
+ * Time: 8:32 AM
+ * To change this template use File | Settings | File Templates.
+ */
+public class NewFolderDialog extends DialogWrapper {
+    private NewFolderPanel panel;
     private CrxNode parentNode;
 
-    public NewFolderDialog(CrxNode parentNode) {
-        setContentPane(contentPane);
-        setModal(true);
-        getRootPane().setDefaultButton(buttonOK);
+    public NewFolderDialog(Project project, CrxNode parentNode) {
+        super(project, true);
         this.parentNode = parentNode;
+        panel = new NewFolderPanel(this);
+        setTitle("New Folder");
+        init();
 
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
-            }
-        });
-
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
-
-// call onCancel() when cross is clicked
-        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                onCancel();
-            }
-        });
-
-// call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+    }
+    @Override
+    protected JComponent createCenterPanel() {
+        return panel.getPanel();
     }
 
-    private void onOK() {
-// add your code here
-        dispose();
-    }
-
-    private void onCancel() {
-        dispose();
+    @Override
+    protected void doOKAction() {
+        try {
+            parentNode.getNode().addNode(panel.getFolderName(), "nt:folder");
+            parentNode.getNode().getSession().save();
+        } catch (RepositoryException e) {
+            e.printStackTrace();
+        }
+        super.doOKAction();
     }
 }

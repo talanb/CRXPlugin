@@ -1,15 +1,14 @@
 package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
+import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.project.ProjectManager;
+import com.meredith.devtools.intellij.crx.CrxIdeaProject;
 import com.meredith.devtools.intellij.crx.ui.NewFolderDialog;
-import org.apache.jackrabbit.core.NodeImpl;
+import com.meredith.devtools.intellij.crx.ui.NewFolderPanel;
 
-import javax.jcr.Node;
 import javax.swing.*;
-import javax.swing.event.PopupMenuListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 
 /**
  * Created by IntelliJ IDEA.
@@ -28,8 +27,9 @@ public class CrxTreeContextMenuListener implements ActionListener {
     public void actionPerformed(ActionEvent actionEvent) {
         JMenuItem item = (JMenuItem)actionEvent.getSource();
         if (item.getText().equals("New Folder...")) {
-            JDialog newFolderDialog = new NewFolderDialog(selectedNode);
-            newFolderDialog.setVisible(true);
+
+            NewFolderDialog newFolderDialog = new NewFolderDialog(ProjectManager.getInstance().getDefaultProject(), selectedNode);
+            newFolderDialog.show();
         }
     }
 }

@@ -1,20 +1,31 @@
 package com.meredith.devtools.intellij.crx.ui.toolwindow;
 
+import com.intellij.jsf.toolWindow.tree.nodes.ListenersNode;
 import com.meredith.devtools.intellij.crx.repository.CrxRepository;
+import org.apache.commons.io.output.ThresholdingOutputStream;
 
 import javax.jcr.*;
+import javax.swing.event.TreeModelEvent;
 import javax.swing.event.TreeModelListener;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CrxTreeSnapshot implements TreeModel {
     private CrxRepository repository;
     private CrxNode rootNode;
+    private List<TreeModelListener> treeModelListeners = new ArrayList<TreeModelListener>();
+
     public CrxTreeSnapshot(CrxRepository repository) throws RepositoryException {
         this.repository = repository;
         rootNode = new CrxNode(repository.getSession().getRootNode(), null);
         Node startNode = repository.getSession().getNode("/apps");
         //iterate(rootNode.getNode(), null);
+    }
+
+    public void refreshNode(CrxNode node) {
+
     }
 
     public Object getRoot() {
@@ -57,12 +68,8 @@ public class CrxTreeSnapshot implements TreeModel {
         return 0;
     }
 
-    public void addTreeModelListener(TreeModelListener treeModelListener) {
-        System.out.println("addTreeModelListener(" + treeModelListener  + ")");
-    }
-
     public void removeTreeModelListener(TreeModelListener treeModelListener) {
-        System.out.println("removeTreeModelListener(" + treeModelListener  + ")");
+        treeModelListeners.remove(treeModelListener);
     }
 
     public void getChildren(CrxNode crxNode) {
@@ -82,6 +89,29 @@ public class CrxTreeSnapshot implements TreeModel {
         NodeIterator ni = node.getNodes();
         while (ni.hasNext()) {
             iterate(ni.nextNode(), thisCrxNode);
+        }
+    }
+
+    public void addNode(CrxNode parentNode, String nodeName, String nodeType) {
+        try {
+            Node newNode = parentNode.getNode().addNode(nodeName, nodeType);
+            CrxNode newCrxNode = new CrxNode(newNode, parentNode);
+            parentNode.addNode(newCrxNode);
+            newCrxNode.save();
+        } catch (RepositoryException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void addTreeModelListener(TreeModelListener listener) {
+        treeModelListeners.add(listener);
+    }
+
+    protected void fireNodeInserted(CrxNode node) {
+        TreeModelEvent event = null;
+        event = new TreeModelEvent(this, new CrxNode[] {node});
+        for (TreeModelListener listener : treeModelListeners) {
+            listener.treeNodesInserted(event);
         }
     }
 
